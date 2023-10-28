@@ -36,3 +36,12 @@ jobs:
         ls -ltra
         pwd
         dvc push
+        touch test1.txt
+         # Add changes to the index
+        git add .
+        
+        # Commit changes
+        git commit -m "Update data via GitHub Actions" || echo "No changes to commit"
+        
+        # Push changes
+        git push
