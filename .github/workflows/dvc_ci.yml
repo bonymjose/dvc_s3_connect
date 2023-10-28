@@ -8,6 +8,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }} 
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -37,6 +39,8 @@ jobs:
         pwd
         dvc push
         touch test1.txt
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
          # Add changes to the index
         git add .
         
