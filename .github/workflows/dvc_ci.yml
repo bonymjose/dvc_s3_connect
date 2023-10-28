@@ -32,7 +32,7 @@ jobs:
     # Include steps for any processing, changes, or model training
     # ...
 
-    - name: Push updated data to DVC
+    - name: Display the files
       run: |
-        dvc add heart.csv
-        dvc push
+        ls -ltra
+

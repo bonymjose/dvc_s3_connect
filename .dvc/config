@@ -1,0 +1,6 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = s3://dvc-test-bony
+    access_key_id = AKIAQHSLDPCHD3M2X34G
+    secret_access_key = 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
