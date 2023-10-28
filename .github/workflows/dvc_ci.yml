@@ -25,6 +25,7 @@ jobs:
 
     - name: Pull latest data from DVC
       run: |
+        ls -ltra
         dvc pull
 
     # Include steps for any processing, changes, or model training
