@@ -34,5 +34,5 @@ jobs:
 
     - name: Push updated data to DVC
       run: |
-        dvc add data.csv
+        dvc add heart.csv
         dvc push
